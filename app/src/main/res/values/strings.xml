@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AlphabeticalScrollbarDemo</string>
+    <string name="Nodata">No Data Found</string>
+    <string name="strSearch">Search...</string>
+</resources>

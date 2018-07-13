@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alphabeticalscrollbardemo.activities.MainActivity">
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/space_15dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtSearch"
+            style="@style/lbl_medium_Style"
+            android:background="@drawable/edt_background"
+            android:textColorHint="@color/search_text_color"
+            android:padding="@dimen/space_10dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/search"
+            android:hint="@string/strSearch" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:layout_toLeftOf="@+id/fast_scroller"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lstView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtNoDataFound"
+                    style="@style/lbl_medium_Style"
+                    android:textColor="@color/viewcolor"
+                    android:gravity="center"
+                    android:text="@string/Nodata" />
+
+
+            </LinearLayout>
+
+        <com.alphabeticalscrollbardemo.activities.RecyclerViewFastScroller
+            android:id="@+id/fast_scroller"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/white"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

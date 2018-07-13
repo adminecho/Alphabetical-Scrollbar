@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="textViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/font_size_12sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+
+    <style name="lbl_large_Style" parent="textViewStyle">
+        <item name="android:textSize">@dimen/font_size_18sp</item>
+    </style>
+    <style name="lbl_big_Style" parent="textViewStyle">
+        <item name="android:textSize">@dimen/font_size_16sp</item>
+    </style>
+
+    <style name="lbl_medium_Style" parent="textViewStyle">
+        <item name="android:textSize">@dimen/font_size_14sp</item>
+    </style>
+
+    <style name="lbl_small_Style" parent="textViewStyle">
+        <item name="android:textSize">@dimen/font_size_10sp</item>
+    </style>
+
+
+
+
+</resources>
